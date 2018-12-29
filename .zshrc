@@ -17,3 +17,6 @@ unset file
 
 # load zsh-completions
 autoload -U compinit && compinit
+
+# load nvm
+source $NVM_DIR/nvm.sh
