@@ -1,0 +1,15 @@
+#!/bin/bash
+
+      PATH=/bin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/sbin
+
+# yarn
+PATH=$PATH:$HOME/.yarn/bin
+
+# nvm
+PATH=$PATH:$HOME/.nvm/versions/node/v10.13.0/bin
+
+export PATH
