@@ -21,6 +21,6 @@ $ source ~/.zshrc
 
 ```bash
 $ ./install-deps.sh
-$ ./.osx
+$ ./.macos
 $ ./.brew
 ```
