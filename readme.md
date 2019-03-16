@@ -3,6 +3,7 @@
 ### cp
 
 ```bash
+$ cp .gitconfig ~/.gitconfig
 $ cp .aliases ~/.aliases
 $ cp .exports ~/.exports
 $ cp .path ~/.path
