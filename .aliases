@@ -19,7 +19,16 @@ alias stfu="osascript -e 'set volume output muted true'"
 
 # copy + paste directories
 alias cpwd="pwd | tr -d '\n' | pbcopy"
-alias cdv="cd $(pbpaste)" # cd to dir in clipboard
+
+function cdpbpaste() {
+  if [ -d "$(pbpaste)" ]; then
+    cd $(pbpaste)
+  else
+    echo "item in clipboard is not a directory"
+  fi
+}
+
+alias cdv="cdpbpaste" # cd to dir in clipboard
 
 alias undopush="git push -f origin HEAD^:master"
 
