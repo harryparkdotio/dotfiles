@@ -21,10 +21,13 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias cpwd="pwd | tr -d '\n' | pbcopy"
 
 function cdpbpaste() {
-  if [ -d "$(pbpaste)" ]; then
-    cd $(pbpaste)
+  local CLIPBOARD = $(pbpaste)
+
+  if [[ -d $CLIPBOARD ]]; then
+    cd $CLIPBOARD
   else
     echo "item in clipboard is not a directory"
+    exit 1
   fi
 }
 
