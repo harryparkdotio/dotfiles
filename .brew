@@ -1,14 +1,22 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 brew update
 brew upgrade
 
 brew install bash
-
-brew install git
-brew install gnupg
 brew install zsh
-brew install wget
+
+brew install gnupg
+
+# more recent versions of macOS tools
+brew install git
+brew install vim --with-override-system-vi
+brew install wget --with-iri
+brew install grep
+
+# useful binaries
+brew install rename
+
 brew install yarn --without-node # required since we're using nvm
 
 # install homebrew cask
