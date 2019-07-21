@@ -28,6 +28,7 @@
 [color]
   ui = always
 [user]
+  signingkey = 7B2638B83496812C
   name = Harry Park
   email = harry@harrypark.io
 [commit]
