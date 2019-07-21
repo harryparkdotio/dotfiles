@@ -28,7 +28,7 @@ function doIt() {
     -av --no-perms . ~
 
   # reload
-  source ~/.zshrc
+  zsh -c "source ~/.zshrc"
 }
 
 if [[ "$1" == "--force" ]] || [[ "$1" == "-f" ]]; then

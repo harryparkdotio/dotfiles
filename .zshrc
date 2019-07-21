@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 ZSH=$HOME/.oh-my-zsh
 
