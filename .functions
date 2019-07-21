@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function pwdpbcopy() {
+  # copy current working directory, trimming any newlines
+  pwd | tr -d '\n' | pbcopy
+}
+
+function cdpbpaste() {
+  # clipboard contents
+  local CLIPBOARD = $(pbpaste)
+
+  # check clipboard contents is a valid directory path
+  if [[ -d $CLIPBOARD ]]; then
+    cd $CLIPBOARD
+  else
+    echo "item in clipboard is not a directory"
+    exit 1
+  fi
+}

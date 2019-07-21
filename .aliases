@@ -17,19 +17,7 @@ alias edit="code" # use vscode
 # mute the system volume
 alias stfu="osascript -e 'set volume output muted true'"
 
-# copy + paste directories
-alias cpwd="pwd | tr -d '\n' | pbcopy"
-
-function cdpbpaste() {
-  local CLIPBOARD = $(pbpaste)
-
-  if [[ -d $CLIPBOARD ]]; then
-    cd $CLIPBOARD
-  else
-    echo "item in clipboard is not a directory"
-    exit 1
-  fi
-}
+alias cpwd="pwdpbcopy" # copy + paste directories
 
 alias cdv="cdpbpaste" # cd to dir in clipboard
 

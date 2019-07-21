@@ -6,8 +6,9 @@
 
 ```bash
 $ cp .gitconfig ~/.gitconfig
-$ cp .aliases ~/.aliases
 $ cp .exports ~/.exports
+$ cp .functions ~/.functions
+$ cp .aliases ~/.aliases
 $ cp .path ~/.path
 $ cp .zshrc ~/.zshrc
 $ cp .vimrc ~/.vimrc

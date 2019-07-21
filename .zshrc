@@ -10,7 +10,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-for file in ~/.{exports,aliases,path}; do
+for file in ~/.{exports,functions,aliases,path}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
