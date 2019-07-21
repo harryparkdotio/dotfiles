@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ue
+set -e
 
 # check branch is master
 if [[ $(git rev-parse --abbrev-ref HEAD) != "master" ]]; then
