@@ -1,28 +1,14 @@
 # dotfiles
 
-### cp
-
-> copy these files manually to prevent any unexpected consequences
+## install
 
 ```bash
-$ cp .gitconfig ~/.gitconfig
-$ cp .exports ~/.exports
-$ cp .functions ~/.functions
-$ cp .aliases ~/.aliases
-$ cp .path ~/.path
-$ cp .zshrc ~/.zshrc
-$ cp .vimrc ~/.vimrc
+$ git clone https://github.com/harryparkdotio/dotfiles.git
+$ cd dotfiles
+$ ./sync.sh
 ```
 
-### reload
-
-```bash
-$ source ~/.zshrc
-```
-
-### initial run
-
-#### mac
+## setup
 
 ```bash
 $ ./install-deps.sh
