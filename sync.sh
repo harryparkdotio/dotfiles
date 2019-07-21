@@ -2,18 +2,6 @@
 
 set -e
 
-# check branch is master
-if [[ $(git rev-parse --abbrev-ref HEAD) != "master" ]]; then
-  echo "current branch must be master to sync"
-  exit 1
-fi
-
-# check working tree clean
-if [[ -n $(git status -s) ]]; then
-  echo "working tree must be clean to sync"
-  exit 1
-fi
-
 function doIt() {
   rsync \
     --exclude ".brew" \
@@ -34,6 +22,18 @@ function doIt() {
 if [[ "$1" == "--force" ]] || [[ "$1" == "-f" ]]; then
   doIt
 else
+  # check branch is master
+  if [[ $(git rev-parse --abbrev-ref HEAD) != "master" ]]; then
+    echo "current branch must be master to sync"
+    exit 1
+  fi
+
+  # check working tree clean
+  if [[ -n $(git status -s) ]]; then
+    echo "working tree must be clean to sync"
+    exit 1
+  fi
+
   printf "this may overwrite existing files in the home directory (~/). are you sure (y/n)? "
   read -r RESPONSE
 
