@@ -20,3 +20,12 @@ autoload -U compinit && compinit
 
 # load nvm
 source $NVM_DIR/nvm.sh
+
+# update PATH for the Google Cloud SDK
+if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
+
+# enable shell command completion for gcloud
+if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
+
+zstyle ':completion::complete:git-checkout:argument-rest:commit-tag-refs' command "echo"
+zstyle ':completion::complete:git-checkout:argument-rest:blob-tag-refs' command "echo"

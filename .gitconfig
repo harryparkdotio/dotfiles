@@ -17,6 +17,9 @@
   # switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
+  # publish to origin with the same branch name as local
+  pub = "!x() { git push --set-upstream origin $(git_current_branch); }; x"
+
   # show verbose output about tags, branches, remotes
   tags = tag -l
   branches = branch -a
