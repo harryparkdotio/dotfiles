@@ -3,6 +3,10 @@
 set -e
 
 function doIt() {
+  git_email=$(git config --global user.email)
+  git_name=$(git config --global user.name)
+  git_signingkey=$(git config --global user.signingkey)
+
   rsync \
     --exclude ".brew" \
     --exclude ".DS_Store" \
@@ -14,6 +18,10 @@ function doIt() {
     --exclude "readme.md" \
     --exclude "sync.sh" \
     -av --no-perms . ~
+
+  git config --global user.email "$git_email"
+  git config --global user.name "$git_name"
+  git config --global user.signingkey "$git_signingkey"
 
   # reload
   zsh -c "source ~/.zshrc"
