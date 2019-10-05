@@ -10,8 +10,6 @@ alias dt="cd ~/Desktop"
 alias cdev="cd ~/Development"
 alias cgit="cd ~/Development/git"
 
-alias rm="trash" # npm install --global trash-cli
-
 alias edit="code" # use vscode
 
 # mute the system volume

@@ -1,13 +1,14 @@
 #!/bin/bash
 
-      PATH=/bin
+PATH=/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
 
-# nvm
-PATH=$PATH:$HOME/.nvm/versions/node/v10.13.0/bin
+# fnm
+PATH=$PATH:$HOME/.fnm
+eval $(fnm env --multi)
 
 # yarn
 PATH=$PATH:$HOME/.yarn/bin

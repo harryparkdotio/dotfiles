@@ -17,14 +17,11 @@ brew install grep
 # useful binaries
 brew install rename
 
-brew install yarn --without-node # required since we're using nvm
-
 # install homebrew cask
 brew tap caskroom/cask
 
 brew cask install google-chrome
 brew cask install visual-studio-code
-brew cask install atom
 brew cask install spotify
 brew cask install github
 brew cask install hyper

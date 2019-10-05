@@ -18,9 +18,6 @@ unset file
 # load zsh-completions
 autoload -U compinit && compinit
 
-# load nvm
-source $NVM_DIR/nvm.sh
-
 # update PATH for the Google Cloud SDK
 if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
 
