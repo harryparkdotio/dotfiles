@@ -7,3 +7,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 export PROMPT='$(_python_venv)%{$fg[cyan]%}%c $(git_prompt_info)%{$reset_color%}%{$fg[magenta]%}$(_git_time_since_commit)$(git_prompt_status)${_return_status}$ '
+
+# golang
+export GOPATH=$HOME/.go
+export GOROOT=/usr/local/opt/go/libexec

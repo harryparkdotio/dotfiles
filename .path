@@ -14,4 +14,8 @@ eval $(fnm env --multi)
 PATH=$PATH:$HOME/.yarn/bin
 PATH=$PATH:$(yarn global bin)
 
+# golang
+PATH=$PATH:$GOPATH/bin
+PATH=$PATH:$GOROOT/bin
+
 export PATH
