@@ -6,9 +6,8 @@ PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
 
-# fnm
-PATH=$PATH:$HOME/.fnm
-eval $(fnm env --multi)
+# n
+PATH=$PATH:$N_PREFIX/bin
 
 # yarn
 PATH=$PATH:$HOME/.yarn/bin

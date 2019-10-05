@@ -3,8 +3,8 @@
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install fnm
-curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --skip-shell --force-install
+# install n
+curl -L https://git.io/n-install | bash
 
 # install yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash

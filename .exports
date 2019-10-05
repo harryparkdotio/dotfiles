@@ -11,3 +11,5 @@ export PROMPT='$(_python_venv)%{$fg[cyan]%}%c $(git_prompt_info)%{$reset_color%}
 # golang
 export GOPATH=$HOME/.go
 export GOROOT=/usr/local/opt/go/libexec
+
+export N_PREFIX="$HOME/.n"
