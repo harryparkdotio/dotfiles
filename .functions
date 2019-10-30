@@ -22,3 +22,7 @@ function uuid() {
   # convert to lowercase, remove newline
   echo $(/usr/bin/uuidgen) | tr "[:upper:]" "[:lower:]" | tr -d '\n'
 }
+
+function isodate() {
+  echo $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+}
