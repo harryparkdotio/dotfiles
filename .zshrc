@@ -8,6 +8,11 @@ plugins=(
   git osx zsh-syntax-highlighting zsh-completions zsh-autosuggestions yarn
 )
 
+# disable magic functions - magic functions slow down pasting
+# https://apple.stackexchange.com/questions/312795/zsh-paste-from-the-clipboard-a-command-takes-a-few-second-to-be-write-in-the-ter
+# https://github.com/ohmyzsh/ohmyzsh/issues/5569
+DISABLE_MAGIC_FUNCTIONS=true
+
 source $ZSH/oh-my-zsh.sh
 
 for file in ~/.{exports,functions,aliases,path}; do
