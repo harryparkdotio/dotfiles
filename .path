@@ -17,4 +17,7 @@ PATH=$PATH:$(yarn global bin)
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$GOROOT/bin
 
+# dotnet
+PATH=$PATH:$HOME/.dotnet/tools
+
 export PATH
