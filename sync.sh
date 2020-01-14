@@ -19,12 +19,10 @@ function doIt() {
     --exclude "sync.sh" \
     -av --no-perms . ~
 
+  # don't override user.{email, name, signingkey} when syncing
   git config --global user.email "$git_email"
   git config --global user.name "$git_name"
   git config --global user.signingkey "$git_signingkey"
-
-  # reload
-  zsh -c "source ~/.zshrc"
 }
 
 if [[ "$1" == "--force" ]] || [[ "$1" == "-f" ]]; then

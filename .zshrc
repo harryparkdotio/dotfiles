@@ -2,11 +2,26 @@
 
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="hyperzsh"
+source <(antibody init)
+
+# fix zsh-syntax-highlighting bug w/ antibody
+unset X_ZSH_HIGHLIGHT_DIRS_BLACKLIST
+
+antibody bundle zsh-users/zsh-syntax-highlighting
+antibody bundle zsh-users/zsh-completions
+antibody bundle zsh-users/zsh-autosuggestions
+
+export NVM_LAZY_LOAD=true # https://github.com/lukechilds/zsh-nvm#lazy-loading
+antibody bundle lukechilds/zsh-nvm
 
 plugins=(
-  git osx zsh-syntax-highlighting zsh-completions zsh-autosuggestions yarn
+  git osx yarn
 )
+
+# theme
+antibody bundle tylerreckart/hyperzsh
+
+ZSH_THEME="hyperzsh"
 
 # disable magic functions - magic functions slow down pasting
 # https://apple.stackexchange.com/questions/312795/zsh-paste-from-the-clipboard-a-command-takes-a-few-second-to-be-write-in-the-ter
