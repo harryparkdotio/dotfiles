@@ -14,3 +14,12 @@ export GOPATH=$HOME/.go
 export GOROOT=/usr/local/opt/go/libexec
 
 export NVM_DIR="$HOME/.nvm"
+
+# you should use - zsh alias reminder - ignore reminders to use aliases listed below
+export YSU_IGNORED_ALIASES=(
+  # git
+  "g" "ga"
+
+  # ls
+  "l" "ll"
+)

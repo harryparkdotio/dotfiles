@@ -10,12 +10,13 @@ unset X_ZSH_HIGHLIGHT_DIRS_BLACKLIST
 antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle zsh-users/zsh-autosuggestions
+antibody bundle "MichaelAquilina/zsh-you-should-use"
 
 export NVM_LAZY_LOAD=true # https://github.com/lukechilds/zsh-nvm#lazy-loading
 antibody bundle lukechilds/zsh-nvm
 
 plugins=(
-  git osx yarn
+  git kubectl osx terraform yarn
 )
 
 # theme

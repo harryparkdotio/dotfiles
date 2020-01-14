@@ -8,6 +8,9 @@ brew install zsh
 
 brew install gnupg
 
+brew install kubectl
+brew install kubectx
+
 # more recent versions of macOS tools
 brew install git
 brew install vim --with-override-system-vi
