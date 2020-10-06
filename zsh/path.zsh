@@ -1,7 +1,9 @@
 #!/bin/sh
 
-export PATH=/bin
-export PATH=$PATH:/usr/bin
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/usr/sbin
-export PATH=$PATH:/sbin
+PATH=/bin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/sbin
+
+export $PATH
