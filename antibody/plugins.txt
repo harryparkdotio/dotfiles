@@ -1,5 +1,5 @@
 # this block is in alphabetic order
-"MichaelAquilina/zsh-you-should-use"
+MichaelAquilina/zsh-you-should-use
 tylerreckart/hyperzsh
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
