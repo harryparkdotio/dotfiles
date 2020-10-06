@@ -1,0 +1,2 @@
+#!/bin/sh
+echo $(date -u +"%Y-%m-%dT%H:%M:%S.000Z") | tr -d '\n'

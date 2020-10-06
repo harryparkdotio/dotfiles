@@ -1,0 +1,166 @@
+{
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderIndentGuides": true,
+  "editor.detectIndentation": false,
+  "files.insertFinalNewline": true,
+  "workbench.settings.editor": "json",
+  "window.newWindowDimensions": "maximized",
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "window.zoomLevel": 0,
+  "editor.fontSize": 12.5,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.minimap.renderCharacters": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "terraform.codelens.enabled": false,
+  "editor.codeLens": true,
+  "files.associations": {
+    ".gitignore": "gitignore"
+  },
+  "csharp.format.enable": true,
+  "workbench.list.keyboardNavigation": "simple",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true,
+    "source.fixAll.eslint": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "terraform.indexing": {
+    "enabled": true,
+    "liveIndexing": false,
+    "delay": 500,
+    "exclude": [
+      ".terraform/**/*",
+      "**/.terraform/**/*"
+    ]
+  },
+  "terraform.languageServer": {
+    "enabled": false,
+    "args": []
+  },
+  "cSpell.userWords": [
+    "actioned",
+    "API's",
+    "cloudbuild",
+    "cloudsql",
+    "Deserialize",
+    "entrypoint",
+    "esque",
+    "gcloud",
+    "gpgsign",
+    "grpc",
+    "harrypark",
+    "harryparkdotio",
+    "idempotency",
+    "JIRA",
+    "JSONB",
+    "jwks uri",
+    "jwks",
+    "kubernetes",
+    "Microservice",
+    "OIDC",
+    "openapi",
+    "openssl",
+    "pino",
+    "PKCS",
+    "postgres",
+    "rebased",
+    "semver",
+    "serializers",
+    "signup",
+    "sqitch",
+    "stackdriver",
+    "terraform",
+    "TIMESTAMPTZ",
+    "Twilio",
+    "unprocessable",
+    "uri",
+    "UUID",
+    "VARCHAR"
+  ],
+  "[shellscript]": {
+    "editor.formatOnSave": false
+  },
+  "[csharp]": {
+    "editor.tabSize": 4
+  },
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "dockerfile",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "sql",
+    "terraform",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.shellArgs.osx": [],
+  "workbench.editor.showTabs": true
+}

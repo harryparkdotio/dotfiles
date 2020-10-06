@@ -1,0 +1,11 @@
+#!/bin/sh
+# clipboard contents
+local CLIPBOARD=$(pbpaste)
+
+# check clipboard contents is a valid directory path
+if [[ -d $CLIPBOARD ]]; then
+  cd $CLIPBOARD
+else
+  echo "clipboard content is not a directory"
+  return 1
+fi

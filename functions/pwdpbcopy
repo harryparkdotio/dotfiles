@@ -1,0 +1,3 @@
+#!/bin/sh
+# copy current working directory, trimming any newlines
+pwd | tr -d '\n' | pbcopy

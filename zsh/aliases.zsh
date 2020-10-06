@@ -1,5 +1,3 @@
-#!/bin/bash
-
 alias c="clear"
 alias f="open ."
 

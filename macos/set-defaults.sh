@@ -1,13 +1,18 @@
 #!/bin/bash
+#
+# sets reasonable macOS defaults.
+#
+# or, in other words, set shit how I like in macOS.
+#
+# The original idea (and a couple settings) were grabbed from:
+#   https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+#
+# run ./set-defaults.sh and you'll be good to go.
 
 sudo -v
 
 # change default shell to zsh
 chsh -s /bin/zsh
-
-#################
-# General UI/UX #
-#################
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -18,10 +23,6 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Disable the crash reporter
 defaults write com.apple.CrashReporter DialogType -string "none"
 
-##########
-# Locale #
-##########
-
 # Set language and text formats
 defaults write NSGlobalDomain AppleLanguages -array "en"
 defaults write NSGlobalDomain AppleLocale -string "en_US@currency=AUD"
@@ -29,11 +30,7 @@ defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-systemsetup -settimezone "Australia/Sydney" > /dev/null
-
-#########
-# Input #
-#########
+systemsetup -settimezone "Australia/Sydney" >/dev/null
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -68,29 +65,17 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-###############
-# Screenshots #
-###############
-
 # Save in PNG format
 defaults write com.apple.screencapture type -string "png"
 
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
-##########
-# Finder #
-##########
-
 # show status bar
 defaults write com.apple.finder ShowStatusbar -bool true
 
 # allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
-
-###################
-# Dock, Dashboard #
-###################
 
 # Set the icon size of Dock items to 128 pixels
 defaults write com.apple.dock tilesize -int 128

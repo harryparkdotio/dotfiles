@@ -1,0 +1,3 @@
+#!/bin/sh
+# convert to lowercase, remove newline
+echo $(/usr/bin/uuidgen) | tr "[:upper:]" "[:lower:]" | tr -d '\n'

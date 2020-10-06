@@ -2,16 +2,10 @@
 
 ## install
 
-```bash
-$ git clone https://github.com/harryparkdotio/dotfiles.git
-$ cd dotfiles
-$ ./sync.sh
-```
-
-## setup
+run this
 
 ```bash
-$ ./install-deps.sh
-$ ./.macos
-$ ./.brew
+$ git clone https://github.com/harryparkdotio/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
+$ script/bootstrap
 ```
