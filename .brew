@@ -6,6 +6,8 @@ brew upgrade
 brew install bash
 brew install zsh
 
+brew install coreutils
+
 brew install gnupg
 
 brew install kubectl

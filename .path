@@ -8,7 +8,7 @@ PATH=$PATH:/sbin
 
 # yarn
 PATH=$PATH:$HOME/.yarn/bin
-PATH=$PATH:$(yarn global bin)
+PATH=$PATH:$HOME/.config/yarn/global/node_modules/.bin
 
 # golang
 PATH=$PATH:$GOPATH/bin

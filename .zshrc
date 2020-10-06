@@ -1,23 +1,17 @@
 #!/bin/zsh
 
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 source <(antibody init)
 
 # fix zsh-syntax-highlighting bug w/ antibody
 unset X_ZSH_HIGHLIGHT_DIRS_BLACKLIST
 
-antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-completions
 antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle "MichaelAquilina/zsh-you-should-use"
 
-export NVM_LAZY_LOAD=true # https://github.com/lukechilds/zsh-nvm#lazy-loading
-antibody bundle lukechilds/zsh-nvm
-
-plugins=(
-  git kubectl osx terraform yarn
-)
+plugins=(git terraform)
 
 # theme
 antibody bundle tylerreckart/hyperzsh
@@ -36,9 +30,6 @@ for file in ~/.{exports,functions,aliases,path}; do
 done
 unset file
 
-# load zsh-completions
-autoload -U compinit && compinit
-
 # update PATH for the Google Cloud SDK
 if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
 
@@ -47,3 +38,9 @@ if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/D
 
 zstyle ':completion::complete:git-checkout:argument-rest:commit-tag-refs' command "echo"
 zstyle ':completion::complete:git-checkout:argument-rest:blob-tag-refs' command "echo"
+
+export NVM_LAZY_LOAD=true
+antibody bundle lukechilds/zsh-nvm
+
+# must be last
+antibody bundle zsh-users/zsh-syntax-highlighting
