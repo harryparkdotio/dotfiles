@@ -54,3 +54,7 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = "code --wait "
