@@ -24,7 +24,7 @@ export ZSH=$HOME/.oh-my-zsh
 # fix zsh-syntax-highlighting bug w/ antibody
 unset X_ZSH_HIGHLIGHT_DIRS_BLACKLIST
 
-plugins=(git terraform)
+plugins=(asdf git terraform)
 
 ZSH_THEME="hyperzsh"
 
