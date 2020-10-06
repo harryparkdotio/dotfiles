@@ -1,3 +1,7 @@
 #!/bin/bash
 
-curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+ZSH_CUSTOM="$ZSH/custom"
+
+curl https://raw.githubusercontent.com/tylerreckart/hyperzsh/master/hyperzsh.zsh-theme > $ZSH_CUSTOM/themes/hyperzsh.zsh-theme

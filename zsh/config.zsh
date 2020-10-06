@@ -50,6 +50,3 @@ bindkey '^?' backward-delete-char
 # delete word with ctrl+backspace
 bindkey '^[[3;5~' backward-delete-word
 # bindkey '^[[3~' backward-delete-word
-
-# edit command line in $EDITOR
-bindkey '^e' edit-command-line
