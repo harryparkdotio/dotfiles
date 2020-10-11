@@ -1,9 +1,13 @@
-# this block is in alphabetic order
+# ohmyzsh
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/git
+
 MichaelAquilina/zsh-you-should-use
-tylerreckart/hyperzsh
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 
-# these should be last!
-lukechilds/zsh-nvm
+# theme
+tylerreckart/hyperzsh path:hyperzsh.zsh-theme
+
+# should be last!
 zsh-users/zsh-syntax-highlighting

@@ -57,8 +57,6 @@ setup_gitconfig() {
     # otherwise this gitconfig was already made by dotfiles
     info "already managed by dotfiles"
   fi
-  # include the gitconfig.local file
-  git config --global include.path ~/.gitconfig.local
   # finally make git know this is a managed config already, preventing later
   # overrides by this script
   git config --global dotfiles.managed true

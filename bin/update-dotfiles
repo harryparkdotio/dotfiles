@@ -11,7 +11,6 @@ cd "$DOTFILES" || exit 1
 PATH="$(command -p getconf PATH):/usr/local/bin"
 
 # load custom config if any
-# shellcheck disable=SC1090
 [ -f ~/.localrc ] && . ~/.localrc
 
 # ssh would not work under cron, add a https one
@@ -29,11 +28,6 @@ echo "› $DOTFILES/script/install"
 if command -v antibody >/dev/null 2>&1; then
   echo "› antibody update"
   antibody update
-fi
-
-if command -v omz >/dev/null 2>&1; then
-  echo "› oh-my-zsh update"
-  omz update
 fi
 
 echo "› registering last update"
