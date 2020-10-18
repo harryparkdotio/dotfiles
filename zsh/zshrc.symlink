@@ -22,6 +22,8 @@ for dump in ~/.zcompdump(N.mh+24); do
 done
 compinit -C
 
+DISABLE_MAGIC_FUNCTIONS=true
+
 # load antibody plugins
 source ~/.zsh_plugins.sh
 
